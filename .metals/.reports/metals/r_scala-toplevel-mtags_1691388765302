@@ -1,0 +1,18 @@
+id: file://<WORKSPACE>/src/test/scala/prcatice/lab1_practice_test.scala:[141..148) in Input.VirtualFile("file://<WORKSPACE>/src/test/scala/prcatice/lab1_practice_test.scala", "package practice
+import chisel3._
+import chisel3.tester._
+import org.scalatest.FreeSpec
+import chisel3.experimental.BundleLiterals._
+
+class  extends FreeSpec with ChiselScalatestTester{
+    "Chisel Tester file3" in {
+        test (new Counter(8)) { a=>
+    
+        a.clock.step(1)
+        
+        }
+    }
+}")
+file://<WORKSPACE>/src/test/scala/prcatice/lab1_practice_test.scala:7: error: expected identifier; obtained extends
+class  extends FreeSpec with ChiselScalatestTester{
+       ^

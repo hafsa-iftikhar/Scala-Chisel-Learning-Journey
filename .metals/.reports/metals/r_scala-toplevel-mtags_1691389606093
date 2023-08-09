@@ -1,0 +1,18 @@
+id: file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala:[204..204) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala", "class Counter ( counterBits : Int ) {
+val max = (1 << counterBits ) - 1
+var count = 0
+for (0 to max){
+    if ( count == max ) {
+    count = 0
+    }
+    else {
+    count = count + 1
+    }
+}
+    }
+object 
+
+")
+file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala:15: error: expected identifier; obtained eof
+
+^

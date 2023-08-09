@@ -1,0 +1,28 @@
+id: file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala:[66..69) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala", "import scala.compiletime.ops.int
+class Counter{
+    def 
+
+
+
+
+
+    val max = (1 << counterBits ) - 1
+var count = 0
+for (0 to max){
+    if ( count == max ) {
+    count = 0
+    }
+    else {
+    count = count + 1
+    }
+}
+    }
+object counter {
+    val  counterBits: Int = 8
+    
+}
+
+")
+file://<WORKSPACE>/src/main/scala/gcd/practice/lab1_practice.scala:9: error: expected identifier; obtained val
+    val max = (1 << counterBits ) - 1
+    ^

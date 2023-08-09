@@ -1,0 +1,7 @@
+id: file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala:[39..39) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala", "package lab2
+import chisel3 . _
+
+class ")
+file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala:4: error: expected identifier; obtained eof
+class 
+      ^

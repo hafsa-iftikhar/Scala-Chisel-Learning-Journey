@@ -1,0 +1,20 @@
+id: file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala:[368..368) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala", "package lab2
+import chisel3 . _
+
+class NestedMuxLoopup extends Module{
+    val in0 = Input(Bool())
+    val in1 = Input(Bool())
+    val in2 = Input(Bool())
+    val in3 = Input(Bool())
+    val in4 = Input(Bool())
+    val in5 = Input(Bool())
+    val in6 = Input(Bool())
+    val in7 = Input(Bool())
+    val sel = Input(UInt(3.W))
+    val out = Output(Bool())
+  }
+  class 
+")
+file://<WORKSPACE>/src/main/scala/gcd/lab2/exercise2.scala:17: error: expected identifier; obtained eof
+
+^
