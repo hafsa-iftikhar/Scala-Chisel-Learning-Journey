@@ -1,0 +1,101 @@
+id: file://<WORKSPACE>/src/main/scala/gcd/lab2/task2.scala:[327..332) in Input.VirtualFile("file://<WORKSPACE>/src/main/scala/gcd/lab2/task2.scala", "package lab2
+import chisel3 . _
+import chisel3.util._
+
+
+
+class barrel_shift extends Module {
+    val io = IO ( new Bundle {
+    val in = Vec (4 , Input ( Bool () ) )
+    val sel = Vec (2 , Input ( Bool () ) )
+    val shift_type = Input ( Bool () )
+    val out = Vec (4 , Output ( Bool () ) )
+})
+
+//INPUT
+    class
+
+
+//MUX1
+    class Mux_1_IO extends Bundle {
+        val in_A = Input ( UInt (32. W ) )
+        val in_B = Input ( UInt (32. W ) )
+        val select = Input ( Bool () )
+        val out = Output ( UInt () )
+    }
+
+    class Mux_2to1_1 extends Module {
+        val io = IO ( new Mux_1_IO )
+        io . out := Mux ( io . select , io . in_A , io . in_B )
+    }
+//MUX2
+    class Mux_2_IO extends Bundle {
+        val in_C = Input ( UInt (32. W ) )
+        val in_D = Input ( UInt (32. W ) )
+        val select = Input ( Bool () )
+        val out = Output ( UInt () )
+    }
+
+    class Mux_2to1_2 extends Module {
+        val io = IO ( new Mux_2_IO )
+        io . out := Mux ( io . select , io . in_C , io . in_D )
+    }
+//MUX3
+    class Mux_3_IO extends Bundle {
+        val in_E = Input ( UInt (32. W ) )
+        val in_F = Input ( UInt (32. W ) )
+        val select = Input ( Bool () )
+        val out = Output ( UInt () )
+    }
+
+    class Mux_2to1_3 extends Module {
+        val io = IO ( new Mux_3_IO )
+        io . out := Mux ( io . select , io . in_E , io . in_F )
+    }
+
+}
+
+
+
+
+
+class Mux_4_IO extends Bundle {
+    val in_G = Input ( UInt (32. W ) )
+    val in_H = Input ( UInt (32. W ) )
+    val select = Input ( Bool () )
+    val out = Output ( UInt () )
+}
+
+class Mux_2to1_4 extends Module {
+    val io = IO ( new Mux_4_IO )
+    io . out := Mux ( io . select , io . in_G , io . in_H )
+}
+
+class Mux_5_IO extends Bundle {
+    val in_I = Input ( UInt (32. W ) )
+    val in_J = Input ( UInt (32. W ) )
+    val select = Input ( Bool () )
+    val out = Output ( UInt () )
+}
+
+class Mux_2to1_5 extends Module {
+    val io = IO ( new Mux_5_IO )
+    io . out := Mux ( io . select , io . in_I , io . in_J )
+}
+
+class Mux_6_IO extends Bundle {
+    val in_K = Input ( UInt (32. W ) )
+    val in_L = Input ( UInt (32. W ) )
+    val select = Input ( Bool () )
+    val out = Output ( UInt () )
+}
+
+class Mux_2to1_6 extends Module {
+    val io = IO ( new Mux_6_IO )
+    io . out := Mux ( io . select , io . in_K , io . in_L )
+}
+
+")
+file://<WORKSPACE>/src/main/scala/gcd/lab2/task2.scala:20: error: expected identifier; obtained class
+    class Mux_1_IO extends Bundle {
+    ^
